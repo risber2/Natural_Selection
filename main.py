@@ -61,8 +61,8 @@ def spawnVillagers(terra, numberOfVillagers):
 
 def main():
 	#set variables
-	width = 500
-	height = 500
+	width = 600
+	height = 600
 	size = 50
 
 	foodNum = 1
@@ -96,8 +96,8 @@ def main():
 			edible.draw(simScreen)
 		# Draw villagers
 		for person in villagerList:
+			person.update(terra, foodList, villagerList)
 			person.draw(simScreen)
-			print(person.x)
 		#=======================================================================#
 		#Update screen
 		pygame.display.update()

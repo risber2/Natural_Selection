@@ -48,4 +48,5 @@ class terrain:
         description: will give the type of block at x and y
         return: 0 for water and 1 for land
         '''
+        #will be error if x/y are beyond the screen
         return(self.blocks[math.floor(x/self.width*self.size)][math.floor(y/self.width*self.size)])
